@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background-color: transparent; }
+*::-webkit-scrollbar-thumb { background-color: #bbb; border-radius: 5px; transition: .2s linear; }
+*::-webkit-scrollbar-thumb:hover { background-color: #ddd; }
+
+body {
+    background-color: #045;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+	width: 100%;
+	color: white;
+	text-align: center;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#container {
+	width: 100%;
+	height: calc(100vh - 100px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#canvas {
+    height: 90%;
+	max-height: 90vw;
+    aspect-ratio: 1/1;
+    -webkit-backdrop-filter: brightness(40%);
+    backdrop-filter: brightness(40%);
+    border-radius: 10px;
+}
+
+#header a { color: aqua; text-decoration: none; }
+#header a:hover { text-decoration: underline; }
+
+#powrot:hover { text-decoration: underline; }
